@@ -43,7 +43,8 @@ void calculateMovingAverages(const vector<double>& values, const vector<string>&
     }
 }
 
-int main() {
+int main() 
+{
     // 파일 경로를 직접 입력하세요
     string filePath = "C:\\Users\\kimmi\\Desktop\\삼성전자.txt";
     ifstream inputFile(filePath);
