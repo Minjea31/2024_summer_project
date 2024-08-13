@@ -6,18 +6,20 @@
 
 using namespace std;
 
-int main() {
-    // 파일 경로를 직접 입력하세요
+int main() 
+{
     string filePath = "C:\\Users\\kimmi\\Desktop\\삼성전자.txt";
     ifstream inputFile(filePath);
 
-    if (!inputFile.is_open()) {
+    if (!inputFile.is_open()) 
+    {
         cerr << "파일을 열 수 없습니다: " << filePath << endl;
         return 1;
     }
 
     string line;
-    while (getline(inputFile, line)) {
+    while (getline(inputFile, line)) 
+    {
         stringstream ss(line);
         string date, close, high, low;
 
@@ -43,5 +45,4 @@ int main() {
     }
 
     inputFile.close();
-    return 0;
 }
