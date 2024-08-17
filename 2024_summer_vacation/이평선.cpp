@@ -21,14 +21,17 @@ string removeQuotesAndCommas(const string& str)
 // 문자열을 double로 변환하는 함수
 double stringToDouble(const string& str)
 {
-    try {
+    try 
+    {
         return stod(str);
     }
-    catch (const invalid_argument&) {
+    catch (const invalid_argument&) 
+    {
         cerr << "Invalid argument for stod: " << str << endl;
         return 0.0;
     }
-    catch (const out_of_range&) {
+    catch (const out_of_range&) 
+    {
         cerr << "Out of range argument for stod: " << str << endl;
         return 0.0;
     }
@@ -91,7 +94,8 @@ int main()
         close = removeQuotesAndCommas(close);
 
         // 데이터 검증
-        if (date.empty() || close.empty()) {
+        if (date.empty() || close.empty()) 
+        {
             cerr << "잘못된 데이터가 발견되었습니다: " << line << endl;
             continue;
         }
