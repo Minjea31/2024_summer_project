@@ -81,13 +81,14 @@ int main()
         int high_78_6_per = maxClose - static_cast<int>(diff * 0.786);
 
         // 출력
-        cout << "최대 종가: " << maxClose << endl;
-        cout << "최소 종가: " << minClose << endl;
-        cout << "23.6%: " << high_23_6_per << endl;
-        cout << "38.2%: " << high_38_2_per << endl;
-        cout << "50%: " << high_50_per << endl;
-        cout << "61.8%: " << high_61_8_per << endl;
-        cout << "78.6%: " << high_78_6_per << endl;
+        cout << fixed << setprecision(0); // 소수점 없이 정수로 출력
+        cout << "최대 종가: " << setw(10) << maxClose << endl;
+        cout << "최소 종가: " << setw(10) << minClose << endl;
+        cout << "23.6%:   " << setw(10) << high_23_6_per << endl;
+        cout << "38.2%:   " << setw(10) << high_38_2_per << endl;
+        cout << "50%:     " << setw(10) << high_50_per << endl;
+        cout << "61.8%:   " << setw(10) << high_61_8_per << endl;
+        cout << "78.6%:   " << setw(10) << high_78_6_per << endl;
     }
 
     return 0;
