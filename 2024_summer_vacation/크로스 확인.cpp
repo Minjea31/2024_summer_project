@@ -64,7 +64,7 @@ vector<pair<string, int>> calculateMovingAverages(const vector<double>& values, 
 
 int main()
 {
-    string filePath = "C:\\Users\\kimmi\\Desktop\\삼성전자.txt";
+    string filePath = "C:\\Users\\kimmi\\Desktop\\주식\\신성이엔지.txt";
     ifstream inputFile(filePath);
 
     if (!inputFile.is_open())
